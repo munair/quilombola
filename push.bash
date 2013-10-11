@@ -29,7 +29,7 @@ sleep 5
 git add .
 git commit -m "$1"
 git push origin development
-[ $3 == "noprompting" ] || while true; do
+[ $2 == "noprompting" ] || while true; do
     read -p "shall we push changes to the staging GitHub repository and the staging instance on Heroku? " yn
     case $yn in
         [Yy]* ) echo "proceeding..."; break;;
@@ -46,7 +46,7 @@ cat ~/.netrc | grep heroku || heroku login
 cat ~/.netrc | grep heroku || heroku keys:add
 heroku git:remote -a rails-quilombola-com -r staging-heroku
 git push staging-heroku staging:master
-[ $3 == "noprompting" ] || while true; do
+[ $2 == "noprompting" ] || while true; do
     read -p "shall we push changes to the master GitHub repository and the production instance on Heroku? " yn
     case $yn in
         [Yy]* ) echo "proceeding..."; break;;
