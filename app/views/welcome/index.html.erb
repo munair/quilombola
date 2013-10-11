@@ -16,6 +16,9 @@
     <!-- jQuery via maxCDN -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
+    <!-- Bootstrap Tab JS -->
+    <script src="https://s3-ap-northeast-1.amazonaws.com/www-quilombola-kr/tab.js"></script>
+
     <!-- Bootstrap Modal JS -->
     <script src="https://s3-ap-northeast-1.amazonaws.com/www-quilombola-kr/modal.js"></script>
 
@@ -45,51 +48,131 @@
 	<div class="row">
 	  <div class="col-xs-12 col-md-4 col-xs-offset-3 col-md-offset-4">
 	    <div class="page-header qu-heading"> <h2><span class="qu-logo">qu</span> <span class="qu-brand">strategies</span></h2> </div>
-	    <p class="qu-copy">We provide <a data-toggle="modal" href="#Quilombola-Strategies-Modal">marketing strategy and business development services</a> for new media and other entrepreneurial ventures.</p>
-	    <p class="qu-copy">We are also the sponsor of the <a href="http://www.cdoseoul.com/">Cordão de Ouro</a> capoeira group in Seoul.</p>
-	  </div>
-	</div>
-	<div class="row">
-	    <!-- Modal -->
-	    <div class="modal fade" id="Quilombola-Strategies-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	      <div class="modal-dialog">
-	        <div class="modal-content">
-	          <div class="modal-header">
-	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	    	    <div class="modal-title qu-heading"> <h2><span class="qu-logo">qu</span> <span class="qu-brand">strategies</span></h2> </div>
-	          </div>
-	          <div class="modal-body">
-	            <h5>Services</h5>
-	            <p>Korean Market Entry Strategies. Business Plan Design and Development. Pricing Strategies. Brand Development. Bootstrapping and Entrepreneurial Finance Strategies. Administrative and Business Development Outsourcing.</p>
-	  	    <h5>About Us</h5>
-	            <p>At Quilombola Strategies we want to see you succeed. We leverage our passion for entrepreneurship and marketing strategy to help you to uniquely define success. We work with you to achieve your goals.</p>
-		    <p>Leading without authenticity is like steering your business towards <a href="http://en.wikipedia.org/wiki/Perfect_competition">perfectly competitive markets</a>. Though we are not economic theorists, we would love to take the time to explain why we believe this to be true. Don't hesitate. Contact us now to find out more.</p>
-	            <h5>Contact Us</h5>
-	            <p> Please fill out the form below to schedule a consultation. </p>
-	            <div id="stylized-form">
-	              <form id="form" name="form" method="post" action="/contact">
-	                <div class="wrapper-block">
-	                  <label>Contact Name:</label>
-	                  <input type="text" name="name" id="name" />
+	    <ul class="nav nav-tabs" id="myTab">
+	      <li class="active"><a href="#home">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#services">Services</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	    </ul>
+	    <div class="tab-content">
+	      <div class="tab-pane active" id="home">
+		<p class="qu-copy"> </p>
+		<p class="qu-copy">We provide marketing strategy, business development, immigration / visa, and relocation / cultural adaptation consulting and support services. We specialize in the provision of these services for telecom, new media, and related entrepreneurial ventures.</p>
+		<p class="qu-copy">We are also the proud sponsor of the <a href="http://www.cdoseoul.com/">Cordão de Ouro</a> capoeira group in Seoul.</p>
+	      </div>
+	      <div class="tab-pane" id="about">
+	      </div>
+	      <div class="tab-pane" id="services">
+		<p class="qu-copy"> </p>
+		<p class="qu-copy"><a data-toggle="modal" href="#marketing-strategies-modal">Marketing Strategy</a></p>
+		<p class="qu-copy"><a data-toggle="modal" href="#business-development-modal">Business Development Services</a></p>
+		<p class="qu-copy"><a data-toggle="modal" href="#immigration-support-modal">Immigration Support</a></p>
+		<p class="qu-copy"><a data-toggle="modal" href="#relocation-support-modal">Relocation Support</a></p>
+                <!-- Modal -->
+                <div class="modal fade" id="marketing-strategies-modal" tabindex="-1" role="dialog" aria-labelledby="marketingLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="modal-title qu-heading"> <h2><span class="qu-logo">qu</span> <span class="qu-brand">strategies</span></h2> </div>
+                      </div>
+                      <div class="modal-body">
+			<h5>Marketing Strategy Advisory</h5>
+			<p>Korean FDI Market Entry Strategies. Business Plan Design and Development. Pricing Strategies. Brand Development. Bootstrapping and Entrepreneurial Finance Strategies.</p>
+                      </div>
+                      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="business-development-modal" tabindex="-1" role="dialog" aria-labelledby="bizdevLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="modal-title qu-heading"> <h2><span class="qu-logo">qu</span> <span class="qu-brand">strategies</span></h2> </div>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Business Development Service</h5>
+                        <p>Client Prospecting. Customer Lead Generation. Customer Pipeline Management. Client Engagement. Relationship Management. Customer Support.</p>
+                      </div>
+                      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="immigration-support-modal" tabindex="-1" role="dialog" aria-labelledby="immigrationLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="modal-title qu-heading"> <h2><span class="qu-logo">qu</span> <span class="qu-brand">strategies</span></h2> </div>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Immigration Support</h5>
+                        <p>General Visa / Immigration Support. Visa Category Consulting. Visa Document Processing. Alien Registration Card Issuing. Visa Extension & Termination Support.</p>
+                      </div>
+                      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="relocation-support-modal" tabindex="-1" role="dialog" aria-labelledby="relocationLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="modal-title qu-heading"> <h2><span class="qu-logo">qu</span> <span class="qu-brand">strategies</span></h2> </div>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Relocation Support</h5> 
+			<p>Housing Support. Furniture Rental & Acquisition. Utilities / Internet / Telephone / Cable TV Provision. Airport Pickup & Cultural Awareness Service. Shipping & Other Relocation Services.</p>
+                      </div>
+                      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+	      </div>
+	      <div class="tab-pane" id="contact">
+		<p class="qu-copy"> </p>
+		<p class="qu-copy"><a data-toggle="modal" href="#contact-form-modal">Contact Form</a></p>
+		<p class="qu-copy">Quilombola Strategies</p>
+		<p class="qu-copy">1106 Jongno 1 Beon Ga, Gwancheol-dong</p>
+		<p class="qu-copy">Jongno-gu, Seoul 110-111, Korea</p>
+	      	<!-- Modal -->
+		<div class="modal fade" id="contact-form-modal" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+	          <div class="modal-dialog">
+	            <div class="modal-content">
+	              <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	    	        <div class="modal-title qu-heading"> <h2><span class="qu-logo">qu</span> <span class="qu-brand">strategies</span></h2> </div>
+	              </div>
+	              <div class="modal-body">
+	                <h5>Contact Us</h5>
+	                <p> Please fill out the form below to schedule a consultation. </p>
+	                <div id="stylized-form">
+	                  <form id="form" name="form" method="post" action="/contact">
+	                    <div class="wrapper-block"> <label>Contact Name:</label> <input type="text" name="name" id="name" /> </div>
+	                    <div class="wrapper-block"> <label>Email Address:</label> <input type="text" name="email" id="email" /> </div>
+	                    <div class="wrapper-block"> <label for="comments">Services Required / Background Information:</label> 
+				<textarea name="comments" id="comments" rows="3" cols="10"></textarea> </div>
+	                    <input type="submit" value="Submit" class="submit btn-form" /></input>
+         	          </form>
 	                </div>
-	                <div class="wrapper-block">
-	                  <label>Email Address:</label>
-         	         <input type="text" name="email" id="email" />
-	                </div>
-	                <div class="wrapper-block">
-	                  <label for="comments">Services Required / Background Information:</label>
-	                  <textarea name="comments" id="comments" rows="3" cols="10"></textarea>
-         	        </div>
-	                  <input type="submit" value="Submit" class="submit btn-form" /></input>
-         	      </form>
-	            </div>
-	          </div>
-	          <div class="modal-footer">
-	            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	          </div>
-	        </div><!-- /.modal-content -->
-	      </div><!-- /.modal-dialog -->
-	    </div><!-- /.modal -->
+	              </div>
+	              <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div>
+	            </div><!-- /.modal-content -->
+	          </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	      </div>
+	    </div>
+	    <script>
+	    $('#myTab a').click(function (e) {
+	      e.preventDefault()
+	      $(this).tab('show')
+	    })
+	    </script>
+	    </div>
 	  </div><!-- end of column -->
 	</div><!-- end of row -->
       </div><!-- end of container -->
