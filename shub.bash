@@ -42,8 +42,7 @@ git branch
 sleep 5
 git merge development
 git push origin staging
-cat ~/.netrc | grep heroku || heroku login
-cat ~/.netrc | grep heroku || heroku keys:add
+cat ~/.netrc | grep heroku || heroku login && heroku keys:add ~/.ssh/id_rsa.pub
 heroku git:remote -a rails-quilombola-com -r staging-heroku
 git push staging-heroku staging:master
 [ $2 == "noprompting" ] || while true; do
