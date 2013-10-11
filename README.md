@@ -29,8 +29,11 @@ declare instance=$1
 declare repository=$2
 declare xcquut='ssh -i /Users/munair/Downloads/tokyomobile.pem -l ubuntu'
 
-# Prepare git, rvm, ruby, libpq-dev (for the pg 0.17.0 ruby interface to postgresql), postgresql and rails for ec2 instance.
+# Install Heroku toolbelt (see https://toolbelt.heroku.com/debian) then prepare git, rvm, ruby, libpq-dev (for 
+# the pg 0.17.0 ruby interface to postgresql), postgresql and rails for ec2 instance.
 #
+
+$xcquut $instance 'wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh'
 $xcquut $instance 'sudo apt-get install -y git-core'
 $xcquut $instance 'curl -L https://get.rvm.io | bash -s stable'
 $xcquut $instance 'source ~/.bash_profile; source ~/.bashrc; source ~/.profile; rvm list; rvm install 2.0.0; rvm --default use 2.0.0; ruby -v'
