@@ -16,6 +16,15 @@
     <!-- jQuery via maxCDN -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
+    <!-- Bootstrap Tooltip JS -->
+    <script src="https://s3-ap-northeast-1.amazonaws.com/www-quilombola-kr/tooltip.js"></script>
+
+    <!-- Bootstrap Popover JS -->
+    <script src="https://s3-ap-northeast-1.amazonaws.com/www-quilombola-kr/popover.js"></script>
+
+    <!-- Bootstrap Carousel JS -->
+    <script src="https://s3-ap-northeast-1.amazonaws.com/www-quilombola-kr/carousel.js"></script>
+
     <!-- Bootstrap Tab JS -->
     <script src="https://s3-ap-northeast-1.amazonaws.com/www-quilombola-kr/tab.js"></script>
 
@@ -57,13 +66,20 @@
 	    <div class="tab-content">
 	      <div class="tab-pane active" id="home">
 		<p class="qu-copy"> </p>
-		<p class="qu-copy">We provide marketing strategy, business development, immigration / visa, and relocation / cultural adaptation consulting and support services. We specialize in the provision of these services for telecom, new media, and related entrepreneurial ventures.</p>
-		<p class="qu-copy">We are also the proud sponsor of the <a href="http://www.cdoseoul.com/">Cordão de Ouro</a> capoeira group in Seoul.</p>
+		<p class="qu-copy">We provide marketing strategy, business development, immigration, relocation, and cultural adaptation support services. In particular, we specialize in the provision of these services for telecom, new media, and related entrepreneurial ventures.</p>
+		<p class="qu-copy">We also actively manage and promote Quilombola Recreation, a health and fitness-focused concern revloving around the activities of the <a href="http://www.cdoseoul.com/">Cordão de Ouro</a> capoeira group in Seoul.</p>
 	      </div>
 	      <div class="tab-pane" id="about">
+		<p class="qu-copy"> </p>
+	    	<img id="munair-headshot" data-toggle="popover" class="stamp pull-left img-circle" width="128" height="128" title="" data-original-title="Founder and CEO" src="https://s3-us-west-2.amazonaws.com/www-finalroundmba-com/munair-headshot.jpg">
+		<p class="qu-copy">Munair Simpson is the CEO and Founder of Quilombola. Prior to establishing Quilombola, Munair was a business development manager at SK Telecom. While at SK, Munair worked with Mediapeers (Berlin-based) to launch the Asia-focused, online business-to-business content exchange called "Trade All Content". Munair graduated from the Wharton School with an MBA in Marketing and an avid Capoeirista.</p>
+		<p class="qu-copy"> </p>
+	    	<img id="joowon-headshot" data-toggle="popover" class="stamp pull-left img-circle" width="128" height="128" title="" data-original-title="Marketing Manager" src="https://s3-us-west-2.amazonaws.com/www-finalroundmba-com/munair-headshot.jpg">
+		<p class="qu-copy">Joowon Lee is Marketing Manager at Quilombola. Prior to joining Quilombola, Joowon was Global Mobility Manager at SK Telecom. During this period, Joowon diligently managed expatriation and repatriation affairs for Korean and foreign employees. Prior to joining the HR Team at SK Telecom, Joowon was responsible for foreign exchange transactions and personal banking at Hana Bank. Joowon loves traveling and watching sports. </p>
 	      </div>
 	      <div class="tab-pane" id="services">
 		<p class="qu-copy"> </p>
+		<p class="qu-copy">At Quilombola Strategies we want to see you succeed. We leverage our passion for entrepreneurship and marketing strategy to help you to uniquely define and achieve success. With over 20 years global and local experience in telecom, Internet, and new media business development and technology management, we aspire to work with you to achieve your goals by providing the following services:</p>
 		<p class="qu-copy"><a data-toggle="modal" href="#marketing-strategies-modal">Marketing Strategy</a></p>
 		<p class="qu-copy"><a data-toggle="modal" href="#business-development-modal">Business Development Services</a></p>
 		<p class="qu-copy"><a data-toggle="modal" href="#immigration-support-modal">Immigration Support</a></p>
@@ -135,7 +151,8 @@
 	      </div>
 	      <div class="tab-pane" id="contact">
 		<p class="qu-copy"> </p>
-		<p class="qu-copy"><a data-toggle="modal" href="#contact-form-modal">Contact Form</a></p>
+		<p class="qu-copy">For further information please address inquiries to our Seoul office (see address below), complete this <a data-toggle="modal" href="#contact-form-modal">contact form</a>, or call Ms. Joowon Lee at +82-10-9090-9183.</p>
+		<p class="qu-copy"> </p>
 		<p class="qu-copy">Quilombola Strategies</p>
 		<p class="qu-copy">1106 Jongno 1 Beon Ga, Gwancheol-dong</p>
 		<p class="qu-copy">Jongno-gu, Seoul 110-111, Korea</p>
@@ -150,7 +167,7 @@
 	              </div>
 	              <div class="modal-body">
 	                <h5>Contact Us</h5>
-	                <p> Please fill out the form below to schedule a consultation. </p>
+	                <p> Please fill out the form below for further information. </p>
 	                <div id="stylized-form">
 	                  <form id="form" name="form" method="post" action="/contact">
 	                    <div class="wrapper-block"> <label>Contact Name:</label> <input type="text" name="name" id="name" /> </div>
